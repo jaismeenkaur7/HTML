@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" id="field1" placeholder="field 1">
+	<input type="text" id="field2" placeholder="field 2">
+	<br>
+	<button id="btn" type="button">button</button>
+	<script>
+		document.getElementById('btn').onclick=function(){
+			let f1 = document.getElementById('field1').value
+			document.getElementById('field1').value=""
+			document.getElementById('field2').value = f1
+		}
+	</script>
+</body>
+</html>
